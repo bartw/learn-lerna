@@ -35,3 +35,9 @@ npx lerna bootstrap --hoist
 cd packages/settings
 npm start
 ```
+
+## so far so good
+
+```shell
+npx lerna ls -la
+```
