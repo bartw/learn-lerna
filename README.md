@@ -100,3 +100,41 @@ npm run build
 cd ../..
 npx lerna bootstrap --hoist
 ```
+
+## use my shared package
+
+```shell
+npx lerna add shared
+```
+
+`packages/conversations/src/App.js`
+
+```js
+import React from 'react';
+import Badge from 'shared';
+
+const App = () => (
+  <div>
+    <Badge/>
+    <div>Conversations!</div>
+  </div>
+);
+
+export default App;
+```
+
+`packages/settings/src/App.js`
+
+```js
+import React from 'react';
+import Badge from 'shared';
+
+const App = () => (
+  <div>
+    <Badge/>
+    <div>Settings!</div>
+  </div>
+);
+
+export default App;
+```
